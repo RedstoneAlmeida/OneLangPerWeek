@@ -1,0 +1,10 @@
+{
+  "name": "mvc-template",
+  "version": "0.1.0",
+  "main": "main.js",
+  "author": "Angelo",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "dependencies": {}
+}

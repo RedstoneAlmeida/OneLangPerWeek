@@ -1,0 +1,14 @@
+<?php
+
+namespace model;
+
+class Functions{
+    public function getUrl(){
+        return $this->getConfig()['base_url'];
+    }
+
+    public function getConfig(){
+        include 'application/config/config.php';
+        return $confir;
+    }
+}

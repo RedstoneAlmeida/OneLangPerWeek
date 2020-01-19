@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MVCTemplate by Th3Ang3lo</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="public/css/style.css">
+
+        <script>
+            let main = require("electron").remote;
+            let variable = main.getGlobal('sharedObj').variable;
+        </script>
+
+    </head>
+    <body>
+        <div class="form">
+            <h2>Gen MVC Template</h2>
+            <form method="post" id="form">
+                <div class="center">
+                    <div>
+                        <div class="grid">
+                            <div>
+                                <label for="title">Título do site:</label>
+                            </div>
+                            <div>
+                                <input type="text" name="title" id="title">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center" style="margin-top: 15px;">
+                    <div>
+                        <div class="grid">
+                            <div>
+                                <label for="title">Nome da pasta:</label>
+                            </div>
+                            <div>
+                                <input type="text" name="folder_name" id="folder_name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center" style="margin-top: 15px;">
+                    <div>
+                        <div class="grid">
+                            <div>
+                                <label for="title">Diretório do site:</label>
+                            </div>
+                            <div>
+                                <input type="text" name="dir" id="dir" value="C:\xampp\htdocs">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <button type="submit">Gerar template</button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+    <script src="public/js/create.js"></script>
+</html>
