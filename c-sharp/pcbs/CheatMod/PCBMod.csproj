@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{906ED696-167E-40A5-96B0-5B34C9AC984C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PCBMod</RootNamespace>
+    <AssemblyName>PCBMod</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="ArabicSupport">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\ArabicSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="CTNAudio">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\CTNAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="CTNLayer">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\CTNLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="CTNVorbis">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\CTNVorbis.dll</HintPath>
+    </Reference>
+    <Reference Include="CursorControl">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\CursorControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ES2">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\ES2.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaxyCSharp">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\GalaxyCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="MoodkieSecurity">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\MoodkieSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="PCBSModloader">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\PCBSModloader.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Windows_Lib">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\Rewired_Windows_Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudWebServicesModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FacebookModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\Users\ASUS\Downloads\PC.Building.Simulator.v1.6upbyLamThanhTungChannel\mod\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PCBMod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
